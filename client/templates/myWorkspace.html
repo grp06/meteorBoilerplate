@@ -1,0 +1,46 @@
+<template name="myWorkspace">
+	<div class="ui page grid">
+
+		<div class="sixteen wide column">
+			{{#each returnProfile}}
+			<h2 class="centerName">{{services.facebook.name}}</h2>
+
+			<img class="ui large image centerImage" src="/images/myPad.jpg" />
+
+			<div class="ui buttons">
+				<a href="{{pathFor 'profile'}}" >
+					<div class="ui button choice">Profile</div>
+				</a>
+				<div class="or"></div>
+				<a href="{{pathFor 'myWorkspace'}}">
+					<div class="ui positive button choice">Workspace</div>
+				</a>
+			</div>
+
+			<div class="ui stackale three column grid">
+				<div class="column">
+					<div class='ui segment center'>Neighborhood</div>
+					<div class="center">{{profile.neighborhood}}</div>
+				</div>
+								<div class="column">
+
+				<div class='ui segment center'>Description</div>
+				<div class="center">{{profile.description}}</div>
+			</div>
+				<div class="column">
+
+				<div class='ui segment center'>Address</div>
+				<div class="center">{{profile.address}}</div>
+			</div>
+			</div>
+
+			<a href="{{pathFor 'editWorkspace'}}">
+
+				<div class="ui secondary button centerButton">Edit Workspace</div>
+
+			</a>
+			{{/each}}
+		</div>
+
+	</div>
+</template>

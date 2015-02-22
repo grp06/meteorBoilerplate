@@ -1,0 +1,18 @@
+<template name="nav">
+	<div class="ui grid">
+		<div class="sixteen wide column">
+
+			<div class="ui menu">
+				<div class="header item">jamPad</div>
+				{{#if currentUser}}
+    			<a class="item" href="{{pathFor 'main'}}">Home</a>
+    			<a class="item" href="{{pathFor 'messages'}}">Messages</a>
+    			<a class="item" href="{{pathFor 'notifications'}}">Notifications</a>
+    			<a class="item" href="{{pathFor 'profile'}}">My Profile</a>
+				{{/if}}
+
+				<div class="right menu">{{> atNavButton}}</div>
+			</div>
+		</div>
+	</div>
+</template>

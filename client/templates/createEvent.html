@@ -1,0 +1,120 @@
+<template name="createEvent">
+		
+	<div class="ui page grid">
+		<div class="sixteen wide column">
+				<div class="createEvent">Create Event</div>
+		</div>
+	</div>
+		<div class="ui stackable four column grid">
+			<div class="column">
+
+				<div class="ui selection dropdown dayDropdown"> <i class="large dropdown icon"></i>
+					<div class="default text">Day of the Week</div>
+					<div class="menu day">
+						<div class="item centerDropdown">Sunday, February 22</div>
+						<div class="item centerDropdown">Monday, February 23</div>
+						<div class="item centerDropdown">Tuesday, February 24</div>
+						<div class="item centerDropdown">Wednesday, February 25</div>
+						<div class="item centerDropdown">Thursday, February 26</div>
+						<div class="item centerDropdown">Friday, February 27</div>
+					</div>
+				</div>
+			</div>
+			<div class="column">
+
+				<div class="ui selection dropdown hourDropdown"> <i class="large dropdown icon"></i>
+					<div class="default text">Hour</div>
+					<div class="menu hour">
+						<div class="item centerDropdown">1</div>
+						<div class="item centerDropdown">2</div>
+						<div class="item centerDropdown">3</div>
+						<div class="item centerDropdown">4</div>
+						<div class="item centerDropdown">5</div>
+						<div class="item centerDropdown">6</div>
+						<div class="item centerDropdown">7</div>
+						<div class="item centerDropdown">8</div>
+						<div class="item centerDropdown">9</div>
+						<div class="item centerDropdown">10</div>
+						<div class="item centerDropdown">11</div>
+						<div class="item centerDropdown">12</div>
+					</div>
+				</div>
+			</div>
+			<div class="column">
+
+				<div class="ui selection dropdown minuteDropdown">
+					<i class="large dropdown icon"></i>
+					<div class="default text">Minute</div>
+					<div class="menu minute">
+						<div class="item centerDropdown">00</div>
+						<div class="item centerDropdown">15</div>
+						<div class="item centerDropdown">30</div>
+						<div class="item centerDropdown">45</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="column">
+
+				<div class="ui selection dropdown ampmDropdown">
+					<i class="large dropdown icon"></i>
+					<div class="default text">AM/PM</div>
+					<div class="menu ampm">
+						<div class="item centerDropdown">PM</div>
+						<div class="item centerDropdown">AM</div>
+
+
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				
+			</div>
+
+			<div class="column">
+
+				<div class="ui selection dropdown ampmDropdown">
+					<i class="large dropdown icon"></i>
+					<div class="default text">Max Guests</div>
+					<div class="menu maxGuests">
+						<div class="item centerDropdown">1 Guest</div>
+						<div class="item centerDropdown">2 Guest</div>
+						<div class="item centerDropdown">3 Guest</div>
+						<div class="item centerDropdown">4 Guest</div>
+						<div class="item centerDropdown">5 Guest</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="column">
+
+				<div class="ui selection dropdown ampmDropdown">
+					<i class="large dropdown icon"></i>
+					<div class="default text">Duration</div>
+					<div class="menu duration">
+						<div class="item centerDropdown">1 hour</div>
+						<div class="item centerDropdown">2 hours</div>
+						<div class="item centerDropdown">3 hours</div>
+						<div class="item centerDropdown">4 hours</div>
+						<div class="item centerDropdown">5 hours</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class='ui page grid'>
+		<div class="sixteen wide center aligned column">
+				<div class="ui input eventDescription">
+					<input type="text" class="enterDescription" placeholder="Enter Description" />
+				</div>
+			</div>
+
+			<div class="sixteen wide column">
+				<a href="{{pathFor 'main'}}">
+				<div class="ui positive button createEventButton">
+					Create
+				</div>
+			</a>
+			</div>
+		</div>
+</template>

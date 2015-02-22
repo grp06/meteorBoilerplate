@@ -1,1 +1,182 @@
 /* CSS declarations go here */
+
+h1{
+	text-align: center;
+}
+
+.ui.page.grid{
+	margin-top: 0;
+}
+.mainLoginForm{
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 2%;
+}
+
+.editProfile{
+	width: 100%;
+	margin-bottom: 1%;
+}
+
+.centerImage{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 3px;
+	margin-bottom: 1%;
+}
+.ui.buttons{
+	width: 100%;
+	display: block;
+	margin-bottom: 3%;
+	margin-left: 1%;
+}
+
+.ui.button.choice{
+	width: 49%;
+
+}
+.center{
+text-align: center;
+font-size: 1.2em;
+margin-bottom: 1%;
+}
+.centerName{
+	text-align: center;
+	margin-top: 0;
+}
+.ui.secondary.button.centerButton{
+	width: 25%;
+	margin-left: 37.5%;
+	margin-top: 2%;
+	padding: 2% 10% 2% 10% ;
+	text-align: center;
+}
+.whiteLink{
+	color: white;
+}
+.saveProfile{
+	display: block;
+}
+.ui.label{
+	width: 20%;
+}
+
+.myPadImg{
+	border-radius: 3px;
+	box-shadow: 0px 0px 0px 1px rgba(39, 41, 43, 0.3), 0px 1px 2px 0 rgba(0, 0, 0, 0.1);
+	margin-bottom: 0;
+}
+
+.padInfo{
+	font-size: 1.2em;
+}
+.ui.secondary.button.editPadPhoto{
+	margin-top: 1%;
+}
+
+.sixteen.wide.column.noSpace{
+	padding-top: 0;
+}
+
+.ui.segment.center{
+	margin-top: 0;
+}
+.ui.dropdown{
+	line-height: 2em;
+	font-size: 1.2em;
+
+}
+.ui.selection.dropdown{
+		color: rgba(0,0,0, 1);
+
+}
+.ui.dropdown > .default.text{
+		color: rgba(0,0,0, .9);
+
+}
+.dayDropdown{
+	width: 100%;
+
+}
+.hourDropdown{
+	width: 100%;
+}
+.minuteDropdown{
+	width: 100%;
+}
+.ampmDropdown{
+	width: 100%;
+
+}
+.ui.selection.dropdown.dayDropdown{
+	text-align: center;
+
+}
+.ui.selection.dropdown.hourDropdown{
+	text-align: center;
+}
+.ui.selection.dropdown.minuteDropdown{
+	text-align: center;
+}
+.ui.selection.dropdown.ampmDropdown{
+	text-align: center;
+}
+.centerDropdown{
+	text-align: center;
+}
+
+
+.eventDescription{
+	margin-top: 1%;
+	width: 100%;
+	font-size: 1.5em;
+}
+.createEvent{
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold
+}
+.enterDescription{
+	font-size: 1.5em;
+	line-height: 2em
+}
+.ui.positive.button.createEventButton{
+	padding: 2% 10% 2% 10% ;
+width: 50%;
+margin-left: 25%;
+}
+.eventPageName{
+	font-size: 1.2em;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+:-ms-input-placeholder {  
+   text-align: center; 
+}

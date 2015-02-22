@@ -1,0 +1,36 @@
+<template name="editWorkspace">
+
+	<div class="ui page grid">
+
+		<div class="sixteen wide column">
+			<div class="ui buttons">
+				<a href="{{pathFor 'editProfile'}}" >
+					<div class="ui button choice">Edit Profile</div>
+				</a>
+				<div class="or"></div>
+				<a href="{{pathFor 'editWorkspace'}}">
+					<div class="ui positive button choice">Edit Work Space</div>
+				</a>
+			</div>
+
+			{{#each returnPrepop}}
+			<div class="ui massive labeled input editProfile">
+				<div class="ui label">Neighborhood:</div>
+				<input type="text" class="neighborhood" autofocus value="{{profile.neighborhood}}"></div>
+			<br />
+			<div class="ui massive labeled input editProfile">
+				<div class="ui label">Description:</div>
+				<input type="text" class="description" value="{{profile.description}}"></div>
+			<br />
+			<div class="ui massive labeled input editProfile">
+				<div class="ui label">Address</div>
+				<input type="text" class="address" value="{{profile.address}}"></div>
+			<br />
+			<a href="{{pathFor 'myWorkspace'}}">
+				<div class="ui primary button editProfile saveWorkspace" >Save</div>
+			</a>
+{{/each}}
+		</div>
+	</div>
+
+</template>

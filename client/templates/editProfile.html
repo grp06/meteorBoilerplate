@@ -1,0 +1,40 @@
+<template name="editProfile">
+
+	<div class="ui page grid">
+
+		<div class="sixteen wide column">
+				<div class="ui buttons">
+					<a href="{{pathFor 'editProfile'}}" >
+						<div class="ui positive button choice">Edit Profile</div>
+					</a>
+					<div class="or"></div>
+					<a href="{{pathFor 'editWorkspace'}}">
+						<div class="ui button choice">Edit Work Space</div>
+					</a>
+				</div>				<div>
+				{{#each returnProfile}}
+				<img class="ui image centerImage" src="{{profile.largePicture}}" />
+				{{/each}}
+			</div>
+			{{#each returnPrepop}}
+			<div class="ui massive labeled input editProfile">
+				<div class="ui label">Neighborhood:</div>
+				<input type="text" class="neighborhood" autofocus value="{{profile.neighborhood}}"></div>
+			<br />
+			<div class="ui massive labeled input editProfile">
+				<div class="ui label">Interests:</div>
+				<input type="text" class="interests" value="{{profile.interests}}"></div>
+			<br />
+			<div class="ui massive labeled input editProfile">
+				<div class="ui label">Why I'm Here:</div>
+				<input type="text" class="whyImHere" value="{{profile.whyImHere}}"></div>
+			{{/each}}
+			<br />
+			<a href="{{pathFor 'profile'}}">
+				<div class="ui primary button editProfile saveProfile" >Save</div>
+			</a>
+
+		</div>
+	</div>
+
+</template>

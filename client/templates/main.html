@@ -1,66 +1,44 @@
 <template name="main">
 
-	<div class="ui grid">
-
-		<div class="sixteen wide column">
-
+	<div class="ui stackable page grid">
+		<div class="fifteen wide column">
 			<div class="ui segment">
-
-				<h1 class="ui header">Project Title</h1>
-
-			</div>
-
-		</div>
-
-	</div>
-
-	<div class="ui stackable three column grid">
-		
-		<div class="column">
-			<div class="ui segment">
-				Column One
-			</div>
-		</div>		
-		<div class="column">
-			<div class="ui segment">
-				Column Two
-			</div>
-		</div>		
-		<div class="column">
-			<div class="ui segment">
-				Column Three
+				<div class="center">Feed</div>
 			</div>
 		</div>
 
-	</div>
+		<div class="one wide column">
+			<a href="{{pathFor 'createEvent'}}">
+				<div class="ui positive button">Create Event</div>
+			</a>
 
-	<div class="ui grid">
-		
-		<div class="sixteen wide column">
-			
+		</div>
+		{{#each returnEventInfo}}
+		<div class="four wide column">
 			<div class="ui segment">
-				<p>Content here?</p>
+				<div class="eventPageName">Host: {{name}}</div>
+
+				<img class="ui small circular image centerImage" src="{{picture}}" />
+				<div> {{day}}, {{hour}}:{{minute}}{{ampm}}</div>
 			</div>
+			<div class="ui segment">
+				<div>Location: {{neighborhood}}</div>
+				<div> "{{description}}"</div>	
+				<div> {{maxGuests}} max</div>	
+				<div> {{duration}} max</div>	
+
+			</div>
+
+
+
 
 		</div>
 
+		<div class="twelve wide column">
+			<img class="ui big image centerImage" src="/images/myPad.jpg" />
+
+		</div>
+		{{/each}}
 	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </template>
